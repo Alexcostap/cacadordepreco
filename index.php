@@ -12,30 +12,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
   <link rel="stylesheet" href="css/paginaInicial.css">
+  <link rel="stylesheet" href="css/footer.css">
 
   <title>Caçador de Preço</title>
 </head>
 
 <body>
-  <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-        <img class="logoHeader img-fluid" src="imagens/logo-cacador-de-preco.png" alt="Logo Caçador">
-      </a>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Pagina Inicial</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Promoções</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Supermercados</a></li>
-      </ul>
-
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2" id="btnEntrar">Entrar</button>
-        <button type="button" class="btn btn-primary" id="btnCadastrar">Cadastrar Produto</button>
-      </div>
-    </header>
-  </div>
-
+  <?php
+    include_once "includes/menu.php"
+  ?>
   <!-- SLIDE BOOTSTRAP -->
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -52,10 +37,10 @@
       
     </div>
   </div>
-  
+   
     <div class="container">
     <div class="row row-cols-1 row-cols-md-4 g-4">
-      <div class="col col-lg-3 ">
+      <div class="col col-lg-3">
         <div class="card h-100">
           <svg class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" 
           aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
@@ -66,7 +51,7 @@
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 " >
+      <div class="col col-lg-3" >
         <div class="card h-100">
           <svg class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" 
           aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
@@ -108,6 +93,9 @@
     </div>
     </div>
   </div>
+  <?php 
+    include_once "includes/rodape.php"
+  ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
