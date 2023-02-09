@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/paginaInicial.css">
   <link rel="stylesheet" href="css/footer.css">
 
-  <title>Caçador de Preço</title>
+  <title>Caçador de Preços</title>
 </head>
 
 <body>
