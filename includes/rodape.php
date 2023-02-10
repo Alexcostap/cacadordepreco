@@ -8,7 +8,7 @@
         <div class="col mb-2">
         </div>
         <div class="col mb-3">
-          <h5>De seu interresse </h5>
+          <h5>De seu interesse </h5>
           <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Procurar por produtos</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Promoções</a></li>
