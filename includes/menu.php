@@ -11,8 +11,8 @@
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2" id="btnEntrar">Entrar</button>
-        <button type="button" class="btn btn-primary" id="btnCadastrar">Cadastrar Produto</button>
+        <a href="login.php"><button type="button" href="login.php" class="btn btn-outline-primary me-2" id="btnEntrar">Entrar</button></a>
+        <a href="login.php"><button type="button"  class="btn btn-primary" id="btnCadastrar">Cadastrar Produto</button></a>
       </div>
     </header>
   </div>
