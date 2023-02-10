@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09-Fev-2023 às 17:56
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 7.4.29
+-- Tempo de geração: 10-Fev-2023 às 23:30
+-- Versão do servidor: 10.4.22-MariaDB
+-- versão do PHP: 7.4.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,23 +29,17 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `clientes` (
   `id` int(6) NOT NULL,
-  `login` varchar(20) NOT NULL,
-  `nome_completo` varchar(150) NOT NULL,
-  `data_nascimento` varchar(20) NOT NULL,
-  `tipo_perfil` varchar(15) NOT NULL,
-  `CPF_CNPJ` varchar(30) NOT NULL,
-  `estado` varchar(50) NOT NULL,
-  `cidade` varchar(50) NOT NULL,
-  `municipio` varchar(50) NOT NULL,
-  `status` int(1) NOT NULL
+  `nome` varchar(150) NOT NULL,
+  `login` varchar(40) NOT NULL,
+  `senha` varchar(50) NOT NULL,
+  `data_nasc` varchar(10) NOT NULL,
+  `cpf_cnpj` varchar(20) NOT NULL,
+  `tipo_usuario` varchar(40) NOT NULL,
+  `estado` varchar(40) NOT NULL,
+  `cidade` varchar(40) NOT NULL,
+  `bairro` varchar(40) NOT NULL,
+  `status` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `clientes`
---
-
-INSERT INTO `clientes` (`id`, `login`, `nome_completo`, `data_nascimento`, `tipo_perfil`, `CPF_CNPJ`, `estado`, `cidade`, `municipio`, `status`) VALUES
-(3, 'matheuseloim', 'Matheus Eloim dos Santos Silva', '22/12/1992', 'Pessoal Fisica', '10898783461', 'Pernambuco', 'Recife', 'Piedade', 1);
 
 --
 -- Índices para tabelas despejadas
@@ -65,7 +59,7 @@ ALTER TABLE `clientes`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
