@@ -17,7 +17,7 @@ include "conexao/conexao.php"
   <link rel="stylesheet" href="css/paginaInicial.css">
   <link rel="stylesheet" href="css/footer.css">
 
-  <title>Caçador de Preços</title>
+  <title>Caçador de Preços - Pernambuco</title>
 </head>
 
 <body>
