@@ -20,7 +20,7 @@
           <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Página inicial</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cadastro</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Login</a></li>
+            <li class="nav-item mb-2"><a href="telaLogin.php" class="nav-link p-0 text-muted">Login</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Política de Privacidade</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sobre Nós</a></li>
           </ul>

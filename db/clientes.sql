@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 10-Fev-2023 às 23:30
--- Versão do servidor: 10.4.22-MariaDB
--- versão do PHP: 7.4.27
+-- Tempo de geração: 13-Fev-2023 às 18:34
+-- Versão do servidor: 10.4.24-MariaDB
+-- versão do PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,6 +42,13 @@ CREATE TABLE `clientes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Extraindo dados da tabela `clientes`
+--
+
+INSERT INTO `clientes` (`id`, `nome`, `login`, `senha`, `data_nasc`, `cpf_cnpj`, `tipo_usuario`, `estado`, `cidade`, `bairro`, `status`) VALUES
+(2, 'Matheus Eloim ', 'eloim', 'senha123', '22/12/1992', '10898783461', 'pessoa_fisica', 'pernambuco', 'recife', 'boa viagem', '1');
+
+--
 -- Índices para tabelas despejadas
 --
 
@@ -59,7 +66,7 @@ ALTER TABLE `clientes`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

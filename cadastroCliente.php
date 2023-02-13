@@ -10,10 +10,6 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
 
-    
-
-    
-
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <style>

@@ -1,6 +1,3 @@
-<?php
-include_once "conexao.php"
-?>
 <!doctype html>
 <html lang="pt-BR">
   <head>
@@ -19,7 +16,7 @@ include_once "conexao.php"
       <div class="col-md-6 offset-md-3">
         <div class="card my-5">
 
-          <form class="card-body cardbody-color p-lg-5">
+          <form action="php/login.php" method="post" class="card-body cardbody-color p-lg-5">
 
             <div class="text-center">
               <img src="imagens/logo-cacador-de-preco.png" class="img-fluid"
@@ -27,15 +24,17 @@ include_once "conexao.php"
             </div>
 
             <div class="mb-3">
-              <input type="text" class="form-control" id="Username" aria-describedby="emailHelp"
+              <input type="text" class="form-control" id="login" name="login" aria-describedby="emailHelp"
                 placeholder="Digite seu usuário">
             </div>
             <div class="mb-3">
-              <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+              <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
             </div>
-            <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100">Login</button></div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-color px-5 mb-5 w-100">Login</button>
+            </div>
             <div id="emailHelp" class="form-text text-center mb-5 text-dark">Ainda não é cadastrado?
-               <a href="#" class="text-dark fw-bold"> Crie sua conta</a>
+               <a href="cadastroCliente.php" class="text-dark fw-bold"> Crie sua conta</a>
             </div>
           </form>
         </div>

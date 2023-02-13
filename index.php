@@ -1,5 +1,5 @@
 <?php
-include_once "conexao.php"
+include "conexao/conexao.php"
 ?>
 <!doctype html>
 <html lang="pt-br">
