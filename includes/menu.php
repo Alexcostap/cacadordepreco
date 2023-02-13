@@ -10,9 +10,7 @@
         <li><a href="#" class="nav-link px-2 link-dark">Supermercados</a></li>
       </ul>
 
-      
-      
-      <div class="col-md-3 text-end">
+    <div class="col-md-4 text-end">
       <?php
         session_start();
         if (!isset($_SESSION['login']) && !isset($_SESSION['senha']))
@@ -20,6 +18,7 @@
           echo"<a href='telaLogin.php'><button type='button'  class='btn btn-outline-primary me-2' id='btnEntrar'>Entrar</button></a>
           <a href='telaLogin.php'><button type='button'  class='btn btn-primary' id='btnCadastrar'>Cadastrar Produto</button></a>";
         }else{
+          echo"<a href='telaLogin.php'><button type='button'  class='btn btn-outline-primary me-2' id='btnEntrar'>" . "Olá <strong> " .  $_SESSION['login'] . "</strong> </button></a>";
           echo"<a href='cadastrarProduto.php'><button type='button'  class='btn btn-primary' id='btnCadastrar'>Cadastre agora seu Produto!</button></a>";          
         }
        ?>
