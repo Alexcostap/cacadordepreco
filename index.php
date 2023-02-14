@@ -14,6 +14,7 @@ include "conexao/conexao.php"
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/adf9b248e1.css" crossorigin="anonymous">
   <link rel="stylesheet" href="css/paginaInicial.css">
   <link rel="stylesheet" href="css/footer.css">
 
@@ -42,7 +43,7 @@ include "conexao/conexao.php"
   </div>
    
     <div class="container">
-    <div class="row row-cols-2 row-cols-md-4 g-4">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col col-lg-3">
         <div class="card h-100">
           <svg class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" 

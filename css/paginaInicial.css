@@ -1,16 +1,32 @@
 .logoHeader{
     width: 200px;
 }
-#btnEntrar{
-    color: #FF9E01;
-    border: 2px #FF7312;  
-}
-#btnCadastrar{
-    background-color: #FF7312;
-    color: white;
-    border: 2px #FF7312;
-}
 .lista-patrocinador{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 500px){
+    .lista-patrocinador{
+        grid-template-columns: auto;
+    }
+}
+
+#btnEntrar{
+    color: #FF9E01;
+    border: 2px #FF7312;
+    
+    
+}
+#btnCadastrar{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:7px;
+    font-size: 16px;
+    background: radial-gradient(circle, #ff7 0,2%, #ff7312 100%);
+    color: rgb(255, 255, 255);
+    border:none;
+    border-radius: 6px;
+}
+#btnCadastrar:active{
+    transform: scale(0,65);
 }
