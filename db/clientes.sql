@@ -46,7 +46,7 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`id`, `nome`, `login`, `senha`, `data_nasc`, `cpf_cnpj`, `tipo_usuario`, `estado`, `cidade`, `bairro`, `status`) VALUES
-(2, 'Matheus Eloim ', 'eloim', 'senha123', '22/12/1992', '10898783461', 'pessoa_fisica', 'pernambuco', 'recife', 'boa viagem', '1');
+(2, 'Matheus Eloim ', 'eloim', '07f932a8aea702a8f55db851eed14bad', '22/12/1992', '10898783461', 'pessoa_fisica', 'pernambuco', 'recife', 'boa viagem', '1');
 
 --
 -- Índices para tabelas despejadas
