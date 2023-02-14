@@ -11,12 +11,17 @@ include "conexao/conexao.php"
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/estilos.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <!-- Icons -->
   <link rel="stylesheet" href="https://kit.fontawesome.com/adf9b248e1.css" crossorigin="anonymous">
+  <!-- Css -->
+  <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="css/paginaInicial.css">
   <link rel="stylesheet" href="css/footer.css">
+  <!-- Fav Icon -->
+  <link rel="shortcut icon" href="imagens/icon-logo.png" type="image/x-icon">
+  <link rel="icon" href="imagens/icon-logo.png" type="image/x-icon">
 
   <title>Caçador de Preços - Pernambuco</title>
 </head>

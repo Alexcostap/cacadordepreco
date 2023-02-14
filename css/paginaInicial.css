@@ -14,10 +14,15 @@
 
 #btnEntrar{
     color: #FF9E01;
-    border: 2px #FF7312;
-    
+    border: none;
     
 }
+
+#btnEntrar:hover{
+    color: #FF9E01;
+    background-color: #f1f1f1;    
+}
+
 #btnCadastrar{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding:7px;
@@ -27,6 +32,7 @@
     border:none;
     border-radius: 6px;
 }
+
 #btnCadastrar:active{
     transform: scale(0,65);
 }
