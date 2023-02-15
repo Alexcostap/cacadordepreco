@@ -1,6 +1,8 @@
 <?php
 include "conexao/conexao.php";
-session_start();
+
+session_start()
+
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -39,67 +41,73 @@ session_start();
       </div>
     </div>
   </div>
-  
+  <!--
   <div class="container">
     <div class="lista-patrocinador">
       <div class="produto-patrocinador">1</div>
-      
-      
+      <div class="produto-patrocinador">2</div>      
     </div>
-  </div>
+  </div>-->
+  <br>
    
     <div class="container">
     <div class="row row-cols-1 row-cols-md-4 g-4">
-      <div class="col col-lg-3">
+      <div class="col col-lg-3 ">
         <div class="card h-100">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" 
-          aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col col-lg-3" >
-        <div class="card h-100">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" 
-          aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a short card.</p>
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
           </div>
         </div>
       </div>
       <div class="col col-lg-3 ">
         <div class="card h-100">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
-
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
           </div>
         </div>
       </div>
       <div class="col col-lg-3 ">
         <div class="card h-100">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
-
-
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
           </div>
         </div>
       </div>
-      
+      <div class="col col-lg-3 ">
+        <div class="card h-100">
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
+          <div class="card-body">
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
+          </div>
+        </div>
+      </div>      
     </div>
     </div>
   </div>
