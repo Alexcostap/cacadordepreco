@@ -107,6 +107,62 @@ session_start()
             <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
           </div>
         </div>
+      </div>
+      <div class="col col-lg-3 ">
+        <div class="card h-100">
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
+          <div class="card-body">
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-3 ">
+        <div class="card h-100">
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
+          <div class="card-body">
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-3 ">
+        <div class="card h-100">
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
+          <div class="card-body">
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-3 ">
+        <div class="card h-100">
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
+          <div class="card-body">
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
+          </div>
+        </div>
       </div>      
     </div>
     </div>
