@@ -1,6 +1,6 @@
 .lista-patrocinador{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     background-color: #ff7312;
     padding: 3px;
     border-radius: 10px;

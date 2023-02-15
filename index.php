@@ -1,5 +1,6 @@
 <?php
-include "conexao/conexao.php"
+include "conexao/conexao.php";
+session_start();
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -42,7 +43,7 @@ include "conexao/conexao.php"
   <div class="container">
     <div class="lista-patrocinador">
       <div class="produto-patrocinador">1</div>
-      <div class="produto-patrocinador">2</div>
+      
       
     </div>
   </div>

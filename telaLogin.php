@@ -1,3 +1,6 @@
+<?php
+include "conexao/conexao.php"
+?>
 <!doctype html>
 <html lang="pt-BR">
   <head>
