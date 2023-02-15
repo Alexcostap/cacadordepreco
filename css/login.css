@@ -1,25 +1,53 @@
 body{
-    background-image: url("../imagens/fundo.jpeg");
-    background-size: 100%;
+background-image: url("../imagens/fundo.jpeg");
+  background-size: 100%;
 }
-.btn-color{
-    background-color: #FF7312;
-    color: #fff;
-    
-  }
-  
-  .profile-image-pic{
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-  }
-  
-  
-  
-  .cardbody-color{
-    background-color: #fff;
-  }
-  
-  a{
-    text-decoration: none;
-  }
+
+
+.profile-image-pic{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+
+
+.cardbody-color{
+  background-color: #fff;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.btn:focus, .btn::-moz-focus-inner{
+  outline:none;
+  border:none;
+}
+.btn{
+  font-family: arial;
+  font-size:14px;
+  text-transform: uppercase;
+  font-weight:700;
+  border:none;
+  padding:10px;
+  cursor: pointer;
+  display:inline-block;
+  text-decoration: none;
+}
+.botaoLogin{
+  background:#ff7312 !important;
+  color:#fff;
+  box-shadow:0 5px 0 #a34706;
+}
+.botaoLogin:hover{
+  background:#ff7312;
+  box-shadow:0 5px 0 #a34706;
+}
+
+.botaoLogin:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+}

@@ -1,5 +1,8 @@
 <?php
-include "conexao/conexao.php"
+include "conexao/conexao.php";
+
+session_start()
+
 ?>
 <!doctype html>
 <html lang="pt-br">

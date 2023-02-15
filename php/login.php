@@ -1,6 +1,5 @@
 <?php
 include "../conexao/conexao.php";
-session_start();
 try{
 
 $login = filter_var($_POST['login']);
@@ -25,6 +24,7 @@ if ($consulta->rowCount() == 0 || $senhacrypto != $usuario['senha']){
         </script>";
         die();
 } else{
+    session_start();
     setcookie("login",$login);
     $_SESSION['login'] = $login;
     $_SESSION['senha'] = $senha;

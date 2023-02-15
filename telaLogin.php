@@ -31,7 +31,7 @@
               <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha">
             </div>
             <div class="text-center">
-              <button type="submit" class="btn btn-color px-5 mb-5 w-100">Login</button>
+              <button type="submit" class="btn btn-color botaoLogin px-5 mb-5 w-100">Login</button>
             </div>
             <div id="emailHelp" class="form-text text-center mb-5 text-dark">Ainda não é cadastrado?
                <a href="cadastroCliente.php" class="text-dark fw-bold"> Crie sua conta</a>

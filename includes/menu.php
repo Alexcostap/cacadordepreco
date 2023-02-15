@@ -12,7 +12,6 @@
 
     <div class="col-md-4 text-end">
       <?php
-        session_start();
         if (!isset($_SESSION['login']) && !isset($_SESSION['senha']))
         {
           echo"<a href='telaLogin.php'><button type='button'  class='btn btn-outline-primary me-2' id='btnEntrar'>Entrar</button></a>
