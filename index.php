@@ -49,11 +49,14 @@ session_start()
     </div>
   </div>-->
   <br>
-   
-    <div class="container">
+  <div class="container">
+    <input type="text" class="form-control" id="filtroCards" placeholder="Clique e faça sua Pesquisa (Nome do Produto, Bairro ou Supermercado)" aria-label="Text input with dropdown button">
+  </div>
+  <br>
+  <div class="container containerCards">
     <div class="row row-cols-1 row-cols-md-4 g-4">
-      <div class="col col-lg-3 ">
-        <div class="card h-100">
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 card-body">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
@@ -66,13 +69,13 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 ">
-        <div class="card h-100">
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 card-body">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
             <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
               <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
               <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
             </p>
@@ -80,13 +83,13 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 ">
-        <div class="card h-100">
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 card-body">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
             <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
               <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
               <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
             </p>
@@ -94,13 +97,13 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 ">
-        <div class="card h-100">
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 card-body">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
             <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
               <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
               <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
             </p>
@@ -108,13 +111,13 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 ">
-        <div class="card h-100">
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 card-body">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
             <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
               <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
               <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
             </p>
@@ -122,13 +125,13 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 ">
-        <div class="card h-100">
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 card-body">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
             <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
               <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
               <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
             </p>
@@ -136,13 +139,13 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 ">
-        <div class="card h-100">
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 card-body">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
             <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
               <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
               <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
             </p>
@@ -150,26 +153,27 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 ">
-        <div class="card h-100">
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 card-body">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
             <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
               <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
               <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
             </p>
             <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
     </div>
   </div>
   <?php 
     include_once "includes/rodape.php"
   ?>
+  <script src="javascript/pesquisaProdutos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
