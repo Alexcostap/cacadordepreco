@@ -22,3 +22,13 @@
         grid-template-columns: auto;
     }
 }
+
+.btn-primary{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:7px;
+    font-size: 16px;
+    background: radial-gradient(circle, #ff7 0,2%, #ff7312 100%);
+    color: rgb(255, 255, 255);
+    border:none !important;
+    border-radius: 6px;
+}

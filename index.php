@@ -8,13 +8,13 @@ session_start()
 <html lang="pt-br">
 
 <head>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ftswyak4g8");
-</script>
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "ftswyak4g8");
+  </script>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,22 +62,8 @@ session_start()
   <br>
   <div class="container containerCards">
     <div class="row row-cols-1 row-cols-md-4 g-4">
-      <div class="col col-lg-3 card-principal">
-        <div class="card h-100 card-body">
-          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
-          <div class="card-body">
-            <h5 class="card-title">Biscoito Treloso</h5>
-            <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
-              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
-              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
-            </p>
-            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col col-lg-3 card-principal">
-        <div class="card h-100 card-body">
+      <div class="col col-lg-3 ">
+        <div class="card h-100 card-principal">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
@@ -90,8 +76,8 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 card-principal">
-        <div class="card h-100 card-body">
+      <div class="col col-lg-3 ">
+        <div class="card h-100 card-principal">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
@@ -104,8 +90,8 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 card-principal">
-        <div class="card h-100 card-body">
+      <div class="col col-lg-3">
+        <div class="card h-100  card-principal">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
@@ -118,8 +104,8 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 card-principal">
-        <div class="card h-100 card-body">
+      <div class="col col-lg-3 ">
+        <div class="card h-100 card-principal">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
@@ -132,8 +118,8 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 card-principal">
-        <div class="card h-100 card-body">
+      <div class="col col-lg-3">
+        <div class="card h-100 card-principal">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
@@ -146,8 +132,8 @@ session_start()
           </div>
         </div>
       </div>
-      <div class="col col-lg-3 card-principal">
-        <div class="card h-100 card-body">
+      <div class="col col-lg-3">
+        <div class="card h-100 card-principal">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>

@@ -7,190 +7,215 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
     <title>Cadastre-se</title>
-
+  <!-- servidor do bootstrap-->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
+  <!--bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--organização da pagina-->  
+    <link rel="stylesheet" href="css/cadastroCliente.css"> 
+  <!--css menu & footer-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/paginaInicial.css">
+  <link rel="stylesheet" href="css/footer.css">
+  
+</head>
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<body class="bg-light">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+  <!--include menu-->  
+  <?php include_once "includes/menu.php"?>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="css/checkout.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo-cadastro-usuario.css">
-    
-  </head>
-  <body class="bg-light">
-    
-<div class="container">
-  <main>
-    <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="imagens/logo-cacador-de-preco.png" alt="" width="180" height="80">
-      <h2>Faça seu Cadastro</h2>
-      <p class="lead">Realize seu cadastro gratuitamente e consiga privilégios exclusivos para membros.</p>
-    </div>
-
-    <div class="row g-5">
-      <div class="col-md-7 col-lg-8">
-        <form class="needs-validation" novalidate>
-          <div class="row g-3">
-            <div class="col-12">
-              <label for="username" class="form-label">Nome Completo</label>
-              <div class="input-group has-validation">
-                <input type="text" class="form-control" id="username"  required>
-              <div class="invalid-feedback">
-                  Informe seu Nome.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label for="username" class="form-label">Usuário</label>
-              <div class="input-group has-validation">
-                <input type="text" class="form-control" id="username" placeholder="Usuário" required>
-              <div class="invalid-feedback">
-                  Informe seu usuário.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label for="username" class="form-label">Senha</label>
-              <div class="input-group has-validation">
-                <input type="password" class="form-control" id="senha" placeholder="Senha" required>
-              <div class="invalid-feedback">
-                  Informe sua senha.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label for="usuario" class="form-label">Confirme sua senha</label>
-              <div class="input-group has-validation">
-                <input type="password" class="form-control" id="confirmarSenha" placeholder="Confirme sua senha" required>
-              <div class="invalid-feedback">
-                  Confirme sua senha.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label for="usuario" class="form-label">Email</label>
-              <div class="input-group has-validation">
-                <input type="email" class="form-control" id="email" placeholder="exemplo@exemplo.com" required>
-              <div class="invalid-feedback">
-                  Informe seu email.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label for="usuario" class="form-label">Numero do celular</label>
-              <div class="input-group has-validation">
-                <input type="number" class="form-control" id="celular" placeholder="(00) 0.0000-0000" required>
-              <div class="invalid-feedback">
-                  Informe seu número do celular.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label for="data-de-nascimento" class="form-label">Data de nascimento</label>
-              <div class="input-group has-validation">
-                <input type="number" class="form-control" id="data-de-nascimento" required>
-              <div class="invalid-feedback">
-                  Informe sua data de nascimento.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-5">
-              <label for="country" class="form-label">Estado</label>
-              <select class="form-select" id="country" required>
-              </select>
-              <div class="invalid-feedback">
-                Informe seu Estado.
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="state" class="form-label">Cidade</label>
-              <select class="form-select" id="state" required>
-              </select>
-              
-              <div class="invalid-feedback">
-                Informe sua Cidade.
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="state" class="form-label">Bairro</label>
-              <select class="form-select" id="state" required>
-              </select>
-              
-              <div class="invalid-feedback">
-                Informe seu Bairro.
-              </div>
-            </div>
-          <hr class="my-4">
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Confirmar</button>
-        </form>
+  <div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <h2>Faça seu Cadastro</h2>
+        <p class="lead">Realize seu cadastro gratuitamente e consiga privilégios exclusivos para membros.</p>
       </div>
-    </div>
-  </main>
-</div>
 
-      <script src="javascript/checkout.js"></script>
-  </body>
+      <div class="row g-5">
+        <div class="col-md-12 col-lg-12">
+          <form class="needs-validation" novalidate action="php/cadastro.php" method="post">
+           <div class="row g-3">
+              <div class="col-sm-6">
+
+
+              <!-- NOME -->
+
+
+                <label for="username" class="form-label">Nome Completo</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" name="nome" id="nome"  required>
+                  <div class="invalid-feedback">
+                    Informe seu Nome.
+                  </div>
+                  </div>
+                </div>
+          
+                <div class="col-6">
+
+
+                <!-- LOGIN -->
+
+
+                <label for="username" class="form-label">Login</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" id="username" name="login" placeholder="Usuário" required>
+                  <div class="invalid-feedback">
+                    Informe um login Válido.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+
+
+              <!-- SENHA -->
+
+
+                <label for="username" class="form-label">Senha</label>
+                <div class="input-group has-validation">
+                  <input type="password" class="form-control" id="senha"  name="senha" placeholder="senha" required>
+                <div class="invalid-feedback">
+                    Informe sua senha.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+
+
+              <!-- CONFIRME SUA SENHA -->
+
+
+                <label for="usuario" class="form-label">Confirme sua senha</label>
+                <div class="input-group has-validation">
+                  <input type="password" class="form-control" id="confirmarSenha" name="conf-senha" placeholder="Confirme sua senha" required>
+                <div class="invalid-feedback">
+                    Confirme sua senha.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+
+
+              <!-- EMAIL -->
+
+
+                <label for="usuario" class="form-label">Email</label>
+                <div class="input-group has-validation">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@exemplo.com" required>
+                <div class="invalid-feedback">
+                    Informe seu email.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+
+
+              <!-- CELULAR -->
+
+
+                <label for="usuario" class="form-label">Numero do celular</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" id="celu" name="celular" placeholder="(00) 0.0000-0000" required onkeypress="mascaraCelular()" maxLength="15" autocomplete="off">
+                <div class="invalid-feedback">
+                    Informe seu número do celular.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+
+
+              <!--  DATA DE NASCIMENTO -->
+
+
+                <label for="data-de-nascimento" class="form-label">Data de nascimento</label>
+                <div class="input-group has-validation">
+                  <input type="texte" class="form-control" name="dataNascimento" id="dataNascimento" required onkeypress="dataNascimentos()" maxLength="10" autocomplete="off">
+                <div class="invalid-feedback">
+                    Informe sua data de nascimento.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+
+
+              <!-- CPF -->
+
+
+                <label for="usuario" class="form-label">CPF</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" name="cpf" id="cpf" placeholder="000.000.000-00" required onkeypress="mascaraCPF()" maxLength="14" autocomplete="off">
+                <div class="invalid-feedback">
+                    Informe seu número do celular.
+                  </div>
+                </div>
+              </div>
+
+              <br>
+
+              <hr>
+
+              <div class="col-md-6">
+
+
+                <label for="country" class="form-label">Estado</label>
+                <select class="form-select" name="estado" id="estado" required>
+                  <option value="Pernambuco">Pernambuco</option>
+                </select>
+                <div class="invalid-feedback">
+                  Informe seu Estado.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="state" class="form-label">Cidade</label>
+                <select class="form-select" name="cidade" id="cidade" required>
+                <option value="Recife">Recife</option>
+                <option value="Camaragibe">Camaragibe</option>
+                <option value="Jaboatão">Jaboatão</option>
+                <option value="Olinda">Olinda</option>
+                <option value="Itamaracá">Itamaracá</option>
+                </select>
+                
+                <div class="invalid-feedback">
+                  Informe sua Cidade.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="state" class="form-label">Bairro</label>
+                <select class="form-select" name="bairro" id="bairro" required>
+                <option value="Bongi">Bongi</option>
+                </select>
+                
+                <div class="invalid-feedback">
+                  Informe seu Bairro.
+                </div>
+              </div>
+            <hr class="my-4">
+            <button  class="w-100 btn btn-primary btn-lg" type="submit" value="Cadastrar">Cadastrar</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!--LINKS PARA AS MASCARAS CPF/CELULAR/DATA DE NASCIMENTO-->
+
+  <script src="javascript/mascaraCadastro.js"></script>
+
+
+  <?php include_once "includes/rodape.php"?>
+
+
+</body>
 </html>
