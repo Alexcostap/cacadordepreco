@@ -57,83 +57,13 @@ session_start()
   </div>-->
   <br>
   <div class="container">
-    <input type="text" class="form-control" id="filtroCards" placeholder="Clique e faça sua Pesquisa (Nome do Produto, Bairro ou Supermercado)" aria-label="Text input with dropdown button">
+    <input type="text" class="form-control" id="filtroCards" onkeyup="aplicaFiltroCards()" onkeyup="aplicaFiltroCards()" placeholder="Clique e faça sua Pesquisa (Nome do Produto, Bairro ou Supermercado)" aria-label="Text input with dropdown button">
   </div>
   <br>
-  <div class="container containerCards">
+  <div class="container" id="containerCards">
     <div class="row row-cols-1 row-cols-md-4 g-4">
-      <div class="col col-lg-3 ">
-        <div class="card h-100 card-principal">
-          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
-          <div class="card-body">
-            <h5 class="card-title">Biscoito Treloso</h5>
-            <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
-              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
-              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
-            </p>
-            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col col-lg-3 ">
-        <div class="card h-100 card-principal">
-          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
-          <div class="card-body">
-            <h5 class="card-title">Biscoito Treloso</h5>
-            <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
-              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
-              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
-            </p>
-            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col col-lg-3">
-        <div class="card h-100  card-principal">
-          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
-          <div class="card-body">
-            <h5 class="card-title">Biscoito Treloso</h5>
-            <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
-              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
-              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
-            </p>
-            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col col-lg-3 ">
-        <div class="card h-100 card-principal">
-          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
-          <div class="card-body">
-            <h5 class="card-title">Biscoito Treloso</h5>
-            <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
-              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
-              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
-            </p>
-            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col col-lg-3">
-        <div class="card h-100 card-principal">
-          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
-          <div class="card-body">
-            <h5 class="card-title">Biscoito Treloso</h5>
-            <p class="card-text">
-              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
-              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
-              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
-            </p>
-            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col col-lg-3">
-        <div class="card h-100 card-principal">
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
@@ -147,7 +77,7 @@ session_start()
         </div>
       </div>
       <div class="col col-lg-3 card-principal">
-        <div class="card h-100 card-body">
+        <div class="card h-100">
           <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
           <div class="card-body">
             <h5 class="card-title">Biscoito Treloso</h5>
@@ -159,7 +89,91 @@ session_start()
             <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
           </div>
         </div>
-      </div>
+      </div> 
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100">
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
+          <div class="card-body">
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100">
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
+          <div class="card-body">
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 ">
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
+          <div class="card-body">
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 ">
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
+          <div class="card-body">
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 ">
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
+          <div class="card-body">
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Mustardinha, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col col-lg-3 card-principal">
+        <div class="card h-100 ">
+          <img src="imagens/produtos/biscoito_treloso.png" alt="" srcset="">
+          <div class="card-body">
+            <h5 class="card-title">Biscoito Treloso</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-location-dot"></i> <strong>Local:</strong> Bongi, Recife - PE <br>
+              <i class="fa-solid fa-store"></i> <strong>Supermercado:</strong> Extra Bom<br>
+              <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,80<br>            
+            </p>
+            <a href="#" id='btnCadastrar' class="btn btn-primary"><i class="fa-regular fa-face-laugh-wink"></i> Opa, Eu quero!</a>
+          </div>
+        </div>
+      </div> 
     </div>
     </div>
   </div>
