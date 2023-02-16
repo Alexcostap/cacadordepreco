@@ -26,7 +26,7 @@
     <h1 class="text-center" id="titulo"> Cadastrar Produto</h1>
     
 <div class="container">
-  <form>
+  <form action="">
     <div class="col-6">
       <div class="input-group mb-3">
         <div class="dropdown" id="Categoria" >       
