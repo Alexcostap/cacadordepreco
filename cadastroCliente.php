@@ -20,6 +20,9 @@
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
   <link rel="stylesheet" href="css/paginaInicial.css">
   <link rel="stylesheet" href="css/footer.css">
+   <!-- Fav Icon -->
+   <link rel="shortcut icon" href="imagens/icon-logo.png" type="image/x-icon">
+  <link rel="icon" href="imagens/icon-logo.png" type="image/x-icon">
   
 </head>
 
@@ -160,8 +163,6 @@
               </div>
 
               <br>
-
-              <hr>
 
               <div class="col-md-6">
 

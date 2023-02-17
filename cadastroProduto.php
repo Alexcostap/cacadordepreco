@@ -26,11 +26,11 @@
     <h1 class="text-center" id="titulo"> Cadastrar Produto</h1>
     
 <div class="container">
-  <form action="">
+  <form action="php/produto.php" method="post">
     <div class="col-6">
       <div class="input-group mb-3">
         <div class="dropdown" id="Categoria" >       
-            <select class="form-select" aria-label="Default select example">        
+            <select  name="categoriaPdt"class="form-select" aria-label="Default select example">        
               <option selected>Categoria</option>
               <option value="mercado">Mercado</option>
               <option value="hortifruti">Hortifruti</option>
@@ -41,19 +41,19 @@
         </div>
         <div class="mb-3 ">  
             <label  for="exampleFormControlInput1" class="form-label">Nome do Produto</label>
-            <input type="text" required class="form-control" id="nomePdt" id="exampleFormControlInput1" placeholder="Biscoito Treloso, tchê">
+            <input type="text" required class="form-control" id="nomePdt" name="nomePdt" id="exampleFormControlInput1" placeholder="Biscoito Treloso, tchê">
         </div>
         <div class="mb-3">    
             <label for="exampleFormControlInput1" class="form-label">Preço do Produto</label>
-            <input type="text" required class="form-control"  id="precoPdt" id="exampleFormControlInput1" placeholder="R$30.00">
+            <input type="text" required class="form-control"  id="precoPdt" name="precoPdt" id="exampleFormControlInput1" placeholder="R$30.00">
         </div>
         <div class="mb-3">    
             <label for="exampleFormControlInput1" class="form-label">Descrição(Opcional)</label>
-            <input type="text" class="form-control" id="descPdt" id="exampleFormControlInput1" placeholder="Ex: Biscoito barato, muito bom...">
+            <input type="text" class="form-control" id="descPdt" name="descPdt" id="exampleFormControlInput1" placeholder="Ex: Biscoito barato, muito bom...">
         </div>
         <!--  Localidade   -->
         <div class="mb-3">
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select" name = "cidadePdt" aria-label="Default select example">
             <option selected>Cidade</option>
             <option value="recife">Recife</option>
             <option value="jaboatao">Jaboatão dos Guararapes</option>
@@ -61,7 +61,7 @@
           </select>
         </div>
         <div class="mb-3">
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select" name="bairroPdt" aria-label="Default select example">
             <option selected>Bairro</option>
             <option value="bongi">Bongi</option>
             <option value="mustardinha">Mustardinha</option>
@@ -70,16 +70,16 @@
 
           <div class="mb-3">    
             <label for="exampleFormControlInput1" class="form-label">Local</label>
-            <input type="text" class="form-control" id="localPdt" id="exampleFormControlInput1" placeholder="Extra Bom...">
+            <input type="text" class="form-control" id="localPdt" name = "mercadoPdt" id="exampleFormControlInput1" placeholder="Extra Bom...">
         </div>
       
         
         <!-- Botão para adicionar Arquivo -->
         <div class="input-group mb-3">
-          <input type="file" class="form-control" id="inputGroupFile01">
+          <input id="imagemPdt" name="imagemPdt" type="file" class="form-control" id="inputGroupFile01">
         </div>
 
-        <input type="submit"  class="btn btn-primary" id="btnCadastrarProduto" onclick="validarProduto()">
+        <input type="submit"  class="btn btn-primary" id="btnCadastrarProduto">
         </button> 
     </form>
   </div>
