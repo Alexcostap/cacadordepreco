@@ -32,11 +32,11 @@ session_start()
   <!-- Fav Icon -->
   <link rel="shortcut icon" href="imagens/icon-logo.png" type="image/x-icon">
   <link rel="icon" href="imagens/icon-logo.png" type="image/x-icon">
-
+  <script src="javascript/localizacao.js"></script>
   <title>Caçador de Preços - Pernambuco</title>
 </head>
 
-<body>
+<body onload="getLocation()">
   <?php
     include_once "includes/menu.php"
   ?>

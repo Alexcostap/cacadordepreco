@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/cadastroProduto.css">
   <!-- <script> src="javascript/cadastrarProduto.js"</script> -->
+   <!-- Fav Icon -->
+  <link rel="shortcut icon" href="imagens/icon-logo.png" type="image/x-icon">
+  <link rel="icon" href="imagens/icon-logo.png" type="image/x-icon">
+  
 
   <title>Caçador de Preços</title>
 </head>
