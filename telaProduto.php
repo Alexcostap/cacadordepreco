@@ -1,17 +1,27 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tela do Produto</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" href="imagens/icon-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/footer.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/adf9b248e1.css" crossorigin="anonymous">
-    <link rel="shortcut icon" href="imagens/icon-logo.png" type="image/x-icon">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://kit.fontawesome.com/adf9b248e1.css" crossorigin="anonymous">
+  <!-- Css -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginaInicial.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <!-- Fav Icon -->
+  <link rel="shortcut icon" href="imagens/icon-logo.png" type="image/x-icon">
+  <link rel="icon" href="imagens/icon-logo.png" type="image/x-icon">
+  <script src="javascript/localizacao.js"></script>
+  <title>Caçador de Preços - Pernambuco</title>
 </head>
 <body> 
 <?php
@@ -34,7 +44,7 @@
                         <div class="product p-4">
                             <div class="d-flex justify-content-between align-items-center">
                                <a href="index.php" class="return"> <div class="d-flex align-items-center"> 
-                               <i class="fa fa-long-arrow-left"> </i> <span class="ml-1"> Voltar</span> </div> </a>
+                               <i class="fa fa-long-arrow-left"></i> <span class="ml-1">  Voltar</span> </div> </a>
                                <i class="fa fa-shopping-cart text-muted"></i>
                             </div>
                             <div class="mt-4 mb-3">
@@ -50,7 +60,6 @@
                                 <i class="fa-regular fa-money-bill-1"></i> <strong> Valor:</strong> R$ 0,75<br>            
                             </p>
                             <div class="cart mt-4 align-items-center"> 
-                                <button class="btn btn-danger text-uppercase mr-2 px-4">Adicionar ao carrinho</button> 
                             <i class="fa fa-heart text-muted"></i> 
                             <i class="fa fa-share-alt text-muted"></i> </div>
                         </div>
