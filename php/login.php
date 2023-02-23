@@ -26,6 +26,7 @@ if ($consulta->rowCount() == 0 || $senhacrypto != $usuario['senha']){
         die();
 } else{
     setcookie("login",$login);
+    $_SESSION['id'] =  $usuario['id'];
     $_SESSION['login'] = $login;
     $_SESSION['senha'] = $senha;
     header("Location: ../index.php");

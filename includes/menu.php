@@ -14,8 +14,8 @@
       <?php
        
         if (!isset($_SESSION['login']) && !isset($_SESSION['senha']))
-        {
-          echo"<a href='telaLogin.php'><button type='button'  class='btn btn-outline-primary me-2' id='btnEntrar'>Entrar</button></a>
+        {          
+          echo "<a href='telaLogin.php'><button type='button'  class='btn btn-outline-primary me-2' id='btnEntrar'>Entrar</button></a>
           <a href='telaLogin.php'><button type='button'  class='btn btn-primary' id='btnCadastrar'>Cadastrar Produto</button></a>";
         }else{
           echo"<a href='telaLogin.php'><button type='button'  class='btn btn-outline-primary me-2' id='btnEntrar'>" . "<i class='fa-sharp fa-regular fa-user'> </i> " ."Olá <strong> " .  $_SESSION['login'] . "</strong> </button></a>";
