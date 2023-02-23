@@ -1,5 +1,13 @@
 <?php
   session_start();
+  if (!isset($_SESSION['login']) && !isset($_SESSION['senha'])){
+    echo"<script language='javascript' type='text/javascript'>
+    alert('Ola, Caçador! Vi que você não tem cadastro ou não fez seu login!');
+    window.location.href='telaLogin.php';
+    </script>";
+    
+  }
+
 ?>
 <!doctype html>
 <html lang="pt-br">
