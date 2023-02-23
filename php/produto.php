@@ -12,8 +12,17 @@ try{
         $cidadePdt = filter_var($_POST['cidadePdt']);
         $bairroPdt = filter_var($_POST['bairroPdt']);
         $mercadoPdt = filter_var($_POST['mercadoPdt']);
-        $caminhoImg = "imagens/produtos/produto1.png";
-
+    
+        if(isset($_FILES["imagemPdt"])){
+            $nomeDoArquivo = "Caçador_de_Preço_" . md5(date()) . "_" . $_FILES["imagemPdt"]["name"];
+            $caminhoTemp = $_FILES["imagemPdt"]["tmp_name"];
+            $caminhoFixoSalvar = "C:/xampp/htdocs/cacadordepreco/imagens/produtos/";
+            $caminhoFixoDd = "imagens/produtos/";
+            move_uploaded_file($caminhoTemp, $caminhoFixoSalvar.$nomeDoArquivo);
+            $caminhoImg = $caminhoFixoDd.$nomeDoArquivo;
+        }else{
+            $caminhoImg = "imagens/produtos/cacador-de-preco-img-padrao.png";
+        }
 
         $insert = $conexao->prepare("insert into produtos (id_cliente, categoria_produto, nome_produto, preco_produto, descricao_produto, 
         estado_produto, cidade_produto, bairro_produto, mercado_produto, caminho_img) 
@@ -30,7 +39,8 @@ try{
         $insert->bindParam(":caminhoImg", $caminhoImg);
         $insert->execute();
 
-        header ("location: ../index.php");      
+        header("Location: ../index.php");
+       
     }
     
     catch (PDOException $e){

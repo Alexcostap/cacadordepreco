@@ -33,16 +33,16 @@
     <h1 class="text-center" id="titulo"> Cadastrar Produto</h1>
     
 <div class="container">
-    <form action="php/produto.php" method="post">
+    <form action="php/produto.php" method="post" enctype="multipart/form-data">
       <div class="col-12">
           <div class="input-group mb-3">
             <div class="dropdown" id="Categoria" >       
                 <select  name="categoriaPdt"class="form-select" aria-label="Default select example">        
-                  <option selected>Selecione a Categoria </option>
-                  <option value="mercado">Mercado</option>
-                  <option value="hortifruti">Hortifruti</option>
-                  <option value="higiene">Higiene</option>
-                  <option value="limpeza">Limpeza</option>
+                  <option selected>Selecione a Categoria do Produto</option>
+                  <option value="Mercado">Mercado</option>
+                  <option value="Hortifruti">Hortifruti</option>
+                  <option value="Higiene">Higiene</option>
+                  <option value="Limpeza">Limpeza</option>
                 </select>
               </div>
             </div>
@@ -58,7 +58,12 @@
                 <label for="exampleFormControlInput1" class="form-label">Descrição(Opcional)</label>
                 <input type="text" class="form-control" id="descPdt" name="descPdt" id="exampleFormControlInput1" placeholder="Ex: Biscoito barato, muito bom...">
             </div>
-            
+            <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Selecione o Estado</label>
+              <select class="form-select" name="estadoPdt" aria-label="Default select example">
+                <option selected value="Pernambuco">Pernambuco</option>
+              </select>
+            </div>
             <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Selecione a cidade</label>
               <select class="form-select" name="cidadePdt" aria-label="Default select example">
@@ -75,18 +80,17 @@
                 <option value="Bongi">Bongi</option>
                 <option value="Mustardinha">Mustardinha</option>
                 <option value="Afogados">Afogados</option>
-                <option value="Candeias">Afogados</option>
+                <option value="Candeias">Candeias</option>
               </select>
 
               <div class="mb-3">    
                 <label for="exampleFormControlInput1" class="form-label">Local</label>
                 <input type="text" class="form-control" id="localPdt" name="mercadoPdt" id="exampleFormControlInput1" placeholder="Extra Bom...">
-            </div>
-          
+            </div>         
             
             <!-- Botão para adicionar Arquivo -->
             <div class="input-group mb-3">
-              <input id="imagemPdt" name="imagemPdt" type="file" class="form-control" id="inputGroupFile01">
+              <input id="imagemPdt" name="imagemPdt" accept="image/png, image/jpg, image/png, img/HEIC" type="file" class="form-control" id="inputGroupFile01">
             </div>
 
             <button  class="w-100 btn btn-primary btn-lg" type="submit" value="Cadastrar">Cadastrar</button>
