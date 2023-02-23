@@ -10,6 +10,25 @@ background-image: url("../imagens/fundo.jpeg");
   object-fit: cover;
 }
 
+.cadastro:hover{
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow:0 3px 0 #a34706;
+}
+.cadastro:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+}
+.cadastro{
+  color: #fff;
+  border-radius: 4px;
+  width: 25%;
+  margin-left: 37%;
+  margin-right: 37%;
+  background: linear-gradient(to right, #ff7312, #ff7312);
+  box-shadow:0 3px 0 #a34706; 
+}
 
 
 .cardbody-color{
@@ -37,7 +56,7 @@ a{
   text-decoration: none;
 }
 .botaoLogin{
-  background:#ff7312 !important;
+  background: linear-gradient(to right, #ff7312, #ff7312) !important;
   color:#fff;
   box-shadow:0 5px 0 #a34706;
 }
