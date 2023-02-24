@@ -33,16 +33,15 @@ session_start();
     <!-- Perfil Usuário -->
 <div class="container">
     <ul class="nav nav-tabs">
-    <li class="nav-item">
-        <a class="nav-link active " id="tituloUsuario" aria-current="page" href="#"><strong>Dados Pessoais</strong></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link " id="tituloUsuario" href="telaUsuarioProdutos.php">Meus Produtos</a>
-    </li>
-
+        <li class="nav-item">
+            <a class="nav-link active " id="tituloUsuario" aria-current="page" href="#"><strong>Dados Pessoais</strong></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="tituloUsuario" href="telaUsuarioProdutos.php">Meus Produtos</a>
+        </li>
     </ul>
-    <br> <br>
-        <div class="mb-3">
+    <br><br>
+    <div class="mb-3">
     <label for="formGroupExampleInput" class="form-label">Nome do Caçador</label>
     <input type="text" class="form-control" id="telaUsuarioNomeDoCacador" placeholder="">
     </div>
