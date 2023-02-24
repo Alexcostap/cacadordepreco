@@ -1,13 +1,5 @@
 <?php
   session_start();
-  if (!isset($_SESSION['login']) && !isset($_SESSION['senha'])){
-    echo"<script language='javascript' type='text/javascript'>
-    alert('Ola, Caçador! Vi que você não tem cadastro ou não fez seu login!');
-    window.location.href='telaLogin.php';
-    </script>";
-    
-  }
-
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -94,11 +86,15 @@
               <div class="mb-3">    
                 <label for="exampleFormControlInput1" class="form-label">Local</label>
                 <input type="text" class="form-control" id="localPdt" name="mercadoPdt" id="exampleFormControlInput1" placeholder="Extra Bom...">
-            </div>         
+            </div>    
+            
+            <div class="mb-3">    
+                <input type="hidden" class="form-control" id="idUsuario" name="idUsuario"value="<?php echo $_SESSION['id'] ?>"  id="exampleFormControlInput1" placeholder="Extra Bom...">
+            </div>
             
             <!-- Botão para adicionar Arquivo -->
             <div class="input-group mb-3">
-              <input id="imagemPdt" name="imagemPdt" accept="image/png, image/jpg, image/png, img/HEIC" type="file" class="form-control" id="inputGroupFile01">
+              <input id="imagemPdt" name="imagemPdt"  type="file" class="form-control" id="inputGroupFile01">
             </div>
 
             <button  class="w-100 btn btn-primary btn-lg" type="submit" value="Cadastrar">Cadastrar</button>

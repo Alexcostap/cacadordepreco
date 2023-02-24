@@ -3,7 +3,7 @@
 include "../conexao/conexao.php";
 
 try{
-        $usuario = "2";
+        $usuario =filter_var($_POST['idUsuario']);;
         $categoriaPdt = filter_var($_POST['categoriaPdt']);
         $nomePdt = filter_var($_POST['nomePdt']);
         $precoPdt = filter_var($_POST['precoPdt']);
@@ -12,9 +12,14 @@ try{
         $cidadePdt = filter_var($_POST['cidadePdt']);
         $bairroPdt = filter_var($_POST['bairroPdt']);
         $mercadoPdt = filter_var($_POST['mercadoPdt']);
+        // DEFINE O FUSO HORARIO COMO O HORARIO DE BRASILIA
+        date_default_timezone_set('America/Sao_Paulo');
+        // CRIA UMA VARIAVEL E ARMAZENA A HORA ATUAL DO FUSO-HORÀRIO DEFINIDO (BRASÍLIA)
+        $dataPdt = date('d/m/Y H:i:s', time());
+        
     
         if(isset($_FILES["imagemPdt"])){
-            $nomeDoArquivo = "Caçador_de_Preço_" . md5(date()) . "_" . $_FILES["imagemPdt"]["name"];
+            $nomeDoArquivo = "Caçador_de_Preço_" . md5($nomePdt) . "_" . $_FILES["imagemPdt"]["name"];
             $caminhoTemp = $_FILES["imagemPdt"]["tmp_name"];
             $caminhoFixoSalvar = "C:/xampp/htdocs/cacadordepreco/imagens/produtos/";
             $caminhoFixoDd = "imagens/produtos/";
@@ -25,8 +30,8 @@ try{
         }
 
         $insert = $conexao->prepare("insert into produtos (id_cliente, categoria_produto, nome_produto, preco_produto, descricao_produto, 
-        estado_produto, cidade_produto, bairro_produto, mercado_produto, caminho_img) 
-        values (:usuario, :categoriaPdt, :nomePdt, :precoPdt, :descricaoPdt, :estadoPdt, :cidadePdt, :bairroPdt, :mercadoPdt, :caminhoImg )");
+        estado_produto, cidade_produto, bairro_produto, mercado_produto, caminho_img, data_de_cadastro) 
+        values (:usuario, :categoriaPdt, :nomePdt, :precoPdt, :descricaoPdt, :estadoPdt, :cidadePdt, :bairroPdt, :mercadoPdt, :caminhoImg, :dataPdt )");
         $insert->bindParam(":usuario", $usuario);
         $insert->bindParam("categoriaPdt", $categoriaPdt);
         $insert->bindParam(":nomePdt", $nomePdt);
@@ -37,6 +42,7 @@ try{
         $insert->bindParam(":bairroPdt", $bairroPdt);
         $insert->bindParam(":mercadoPdt", $mercadoPdt);
         $insert->bindParam(":caminhoImg", $caminhoImg);
+        $insert->bindParam(":dataPdt", $dataPdt);
         $insert->execute();
 
         header("Location: ../index.php");
