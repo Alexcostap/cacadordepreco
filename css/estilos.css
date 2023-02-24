@@ -48,3 +48,4 @@ label.radio input:checked+span{border-color: #ff0000;background-color: #ff0000;c
 .btn-danger:focus{box-shadow: none}.cart i{margin-right: 10px}
 .return{text-decoration: none}
 .align-items-center{text-decoration: none; color: #2b2b2b;}
+#voltar{padding-left: 5px !important;}

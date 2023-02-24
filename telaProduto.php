@@ -56,8 +56,8 @@ echo "
                         <div class='product p-4'>
                             <div class='d-flex justify-content-between align-items-center'>
                                <a href='index.php' class='return'> <div class='d-flex align-items-center'> 
-                               <i class='fa fa-long-arrow-left'></i> <span class='ml-1'>  Voltar</span> </div> </a>
-                               <i class='fa fa-shopping-cart text-muted'></i>
+                               <i class= 'fa fa-long-arrow-left ' > </i> <span id='voltar' class='ml-1'>  Voltar</span> </div> </a>
+                               
                             </div>
                             
                             <div class='mt-4 mb-3'>
@@ -73,8 +73,9 @@ echo "
                                 <i class='fa-regular fa-money-bill-1'></i> <strong> Valor:</strong> R$$produto[preco_produto]<br>            
                             </p>
                             <div class='cart mt-4 align-items-center'> 
-                            <i class='fa fa-heart text-muted'></i> 
-                            <i class='fa fa-share-alt text-muted'></i> </div>
+                            <i class='fa fa-heart fa-xl text-muted'></i> 
+                            <a href='whatsapp://send?text=Olha essa *PROMOÇÂO* que eu achei%a https://www.cacadordepreco.com.br/telaProduto.php?id=$produto[id]'> <i class='fa-brands fa-whatsapp fa-xl text-muted'></i></a> 
+                            <a href='https://www.facebook.com/sharer/sharer.php?u=https://www.cacadordepreco.com.br/telaProduto.php?id=$produto[id]'><i class='fa-brands fa-facebook fa-xl text-muted'></i></a> </div>
                         </div>
                     </div>
                 </div>
