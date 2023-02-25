@@ -11,15 +11,14 @@
       </ul>
 
     <div class="col-md-5 text-end">
-      <?php
-       
+      <?php       
         if (!isset($_SESSION['login']) && !isset($_SESSION['senha']))
         {          
           echo "<a href='telaLogin.php'><button type='button'  class='btn btn-outline-primary me-2' id='btnEntrar'>Entrar</button></a>
           <a href='telaLogin.php'><button type='button'  class='btn btn-primary' id='btnCadastrar'>Cadastrar Produto</button></a>";
         }else{
-          echo"<a href='telaUsuario.php'><button type='button'  class='btn btn-outline-primary me-2' id='btnEntrar'>" . "<i class='fa-sharp fa-regular fa-user'> </i> " ."Olá Caçador(a):<strong> " .  $_SESSION['login'] . "</strong> </button></a>";
-          echo"<a href='cadastroProduto.php'><button type='button'  class='btn btn-primary' id='btnCadastrar'>" . "<i class='fa-solid fa-cookie-bite'></i>" . " Cadastre agora seu Produto!</button></a>";          
+          echo"<a href='telaUsuario.php'><button type='button'  class='btn btn-outline-primary me-2' id='btnEntrar'>" . "<i class='fa-sharp fa-regular fa-user'> </i> " ."Área do Caçador(a):<strong> " .  $_SESSION['login'] . "</strong> </button></a>";
+          echo"<a href='cadastroProduto.php'><button type='button'  class='btn btn-primary' id='btnCadastrar'>" . "<i class='fa-solid fa-cookie-bite'></i>" . " Cadastre sua caça agora!</button></a>";          
         }
        ?>
       </div>

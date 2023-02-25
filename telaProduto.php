@@ -2,6 +2,10 @@
 include "conexao/conexao.php";
 session_start();
 
+$id=filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
+$consulta=$conexao->query("select * from produtos where id =$id");
+$produto = $consulta->fetch(PDO::FETCH_ASSOC);
+
 ?>
 <!DOCTYPE html>
 <html lang='pt-br'>
@@ -23,7 +27,7 @@ session_start();
   <link rel='shortcut icon' href='imagens/icon-logo.png' type='image/x-icon'>
   <link rel='icon' href='imagens/icon-logo.png' type='image/x-icon'>
   <script src='javascript/localizacao.js'></script>
-  <title>Caçador de Preços - Pernambuco</title>
+  <title><?php echo "Caçador de Preços - $produto[nome_produto] por apenas R$$produto[preco_produto], no supermercado $produto[mercado_produto] localizado no(a)$produto[mercado_produto]. apenas aqui, no caçador de preços! </title> ";?></title>
 </head>
 <body> 
 <?php
@@ -32,9 +36,6 @@ session_start();
 
 <?php 
 
-        $id=filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
-        $consulta=$conexao->query("select * from produtos where id =$id");
-        $produto = $consulta->fetch(PDO::FETCH_ASSOC);
 
 
 echo "
@@ -47,7 +48,9 @@ echo "
                     <div class='col-md-6'>
                         <div class='images p-3'>
                             <div class='text-center p-4'> 
-                                <img id='main-image' src='$produto[caminho_img]' alt='' srcset='' width='250' />
+                                <img id='main-image' src='$produto[caminho_img]' 
+                                alt='$produto[nome_produto], $produto[nome_produto] barato, $produto[nome_produto] promoção, $produto[nome_produto] perto de mim,$produto[nome_produto] $produto[descricao_produto],$produto[nome_produto] $produto[mercado_produto],$produto[nome_produto] $produto[bairro_produto],$produto[nome_produto] $produto[cidade_produto],$produto[nome_produto] $produto[cidade_produto],$produto[descricao_produto],$produto[cidade_produto] promoção,$produto[bairro_produto] promoção,barato, promoção,'
+                                 srcset='' width='250' />
                                 
                             </div>
                         </div>
@@ -56,7 +59,7 @@ echo "
                         <div class='product p-4'>
                             <div class='d-flex justify-content-between align-items-center'>
                                <a href='index.php' class='return'> <div class='d-flex align-items-center'> 
-                               <i class= 'fa fa-long-arrow-left ' > </i> <span id='voltar' class='ml-1'>  Voltar</span> </div> </a>
+                               <i class= 'fa fa-long-arrow-left ' > </i> <span id='voltar' class='ml-1'> <strong> Voltar </strong></span> </div> </a>
                                
                             </div>
                             
@@ -70,12 +73,15 @@ echo "
                             <p class='card-text'>
                                 <i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> $produto[bairro_produto], $produto[cidade_produto] - $produto[estado_produto] <br>
                                 <i class='fa-solid fa-store'></i> <strong>Supermercado:</strong> $produto[mercado_produto]<br>
-                                <i class='fa-regular fa-money-bill-1'></i> <strong> Valor:</strong> R$$produto[preco_produto]<br>            
+                                <i class='fa-regular fa-money-bill-1'></i> <strong> Valor:</strong> R$ $produto[preco_produto]<br>     
+                                <i class='fa-solid fa-calendar-days'></i> <strong> Data do Cadastro:</strong> $produto[data_de_cadastro]<br>          
                             </p>
                             <div class='cart mt-4 align-items-center'> 
-                            <i class='fa fa-heart fa-xl text-muted'></i> 
-                            <a href='whatsapp://send?text=Olha essa *PROMOÇÂO* que eu achei%a https://www.cacadordepreco.com.br/telaProduto.php?id=$produto[id]'> <i class='fa-brands fa-whatsapp fa-xl text-muted'></i></a> 
+                            <p class='card-text'>
+                            Compartilhe agora essa caça com seus amigos: <br>                         
+                            <a href='whatsapp://send?text=Olha esse *PROMOÇÃO*! $produto[nome_produto], no Supermercado - $produto[mercado_produto],  $produto[bairro_produto] - $produto[cidade_produto] - $produto[estado_produto] - Valor *(R$ $produto[preco_produto])* -  Confira mais detalhes no site *Caçador de Preco*: https://www.cacadordepreco.com.br/telaProduto.php?id=$produto[id]'> <i class='fa-brands fa-whatsapp fa-xl text-muted'></i></a> 
                             <a href='https://www.facebook.com/sharer/sharer.php?u=https://www.cacadordepreco.com.br/telaProduto.php?id=$produto[id]'><i class='fa-brands fa-facebook fa-xl text-muted'></i></a> </div>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -85,11 +91,6 @@ echo "
 </div>
 </div>";
 ?>
-
-
-
-
-
 
 <?php 
     include_once "includes/rodape.php"

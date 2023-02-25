@@ -35,7 +35,7 @@ session_start()
   <title>Caçador de Preços - Pernambuco</title>
 </head>
 
-<body onload="getLocation()">
+<body>
   <?php
     include_once "includes/menu.php"
   ?>
@@ -76,7 +76,8 @@ session_start()
             <p class='card-text'>
               <i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> $produto[bairro_produto], $produto[cidade_produto] - $produto[estado_produto] <br>
               <i class='fa-solid fa-store'></i> <strong>Supermercado:</strong> $produto[mercado_produto]<br>
-              <i class='fa-regular fa-money-bill-1'></i> <strong> Valor:</strong> R$ $produto[preco_produto]<br>            
+              <i class='fa-regular fa-money-bill-1'></i> <strong> Valor:</strong> R$ $produto[preco_produto]<br>
+              <i class='fa-solid fa-calendar-days'></i> <strong> Data do Cadastro:</strong> $produto[data_de_cadastro]<br>            
             </p>
             <a href='telaProduto.php?id=$produto[id]'><button type='button'  class='btn btn-primary' id='btnCadastrar'><i class='fa-regular fa-face-laugh-wink'></i> Opa, Eu quero!</button></a>
           </div>

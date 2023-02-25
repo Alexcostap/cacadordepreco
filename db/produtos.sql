@@ -32,7 +32,7 @@ CREATE TABLE `produtos` (
   `id_cliente` int(10) DEFAULT NULL,
   `categoria_produto` varchar(40) NOT NULL,
   `nome_produto` varchar(200) NOT NULL,
-  `preco_produto` int(10) NOT NULL,
+  `preco_produto` varchar(30) NOT NULL,
   `descricao_produto` varchar(800) NOT NULL,
   `estado_produto` varchar(50) NOT NULL,
   `cidade_produto` varchar(50) NOT NULL,
@@ -42,17 +42,7 @@ CREATE TABLE `produtos` (
   `data_de_cadastro` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Extraindo dados da tabela `produtos`
---
 
-INSERT INTO `produtos` (`id`, `id_cliente`, `categoria_produto`, `nome_produto`, `preco_produto`, `descricao_produto`, `estado_produto`, `cidade_produto`, `bairro_produto`, `mercado_produto`, `caminho_img`, `data_de_cadastro`) VALUES
-(1, 2, '', 'Biscoito Treloso', 0, 'Biscoito, baratinho e gostosinho ><', 'Pernambuco', 'Recife', 'Mustardinha', 'Extra bom', 'imagens/produto/biscoito_treloso.png', NULL),
-(2, 2, 'mercado', 'a', 800, 'biscoito nham nham', '', 'recife', 'bongi', 'Casa do seu pai', 'imagens/produtos/produto1.png', NULL);
-
---
--- Índices para tabelas despejadas
---
 
 --
 -- Índices para tabela `produtos`
