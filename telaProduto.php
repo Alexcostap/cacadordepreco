@@ -23,6 +23,8 @@ $produto = $consulta->fetch(PDO::FETCH_ASSOC);
   <link rel='stylesheet' href='css/estilos.css'>
   <link rel='stylesheet' href='css/paginaInicial.css'>
   <link rel='stylesheet' href='css/footer.css'>
+   <!-- SEO -->
+  <meta name="author" content="Caçador de Preço">  
   <!-- Fav Icon -->
   <link rel='shortcut icon' href='imagens/icon-logo.png' type='image/x-icon'>
   <link rel='icon' href='imagens/icon-logo.png' type='image/x-icon'>
@@ -60,9 +62,7 @@ echo "
                             <div class='d-flex justify-content-between align-items-center'>
                                <a href='index.php' class='return'> <div class='d-flex align-items-center'> 
                                <i class= 'fa fa-long-arrow-left ' > </i> <span id='voltar' class='ml-1'> <strong> Voltar </strong></span> </div> </a>
-                               
-                            </div>
-                            
+                            </div>                            
                             <div class='mt-4 mb-3'>
                                 <h5 class='text-uppercase'>$produto[nome_produto]</h5>
                                 <div class='price d-flex flex-row align-items-center'> <span class='act-price'>R$$produto[preco_produto]</span>
@@ -78,8 +78,8 @@ echo "
                             </p>
                             <div class='cart mt-4 align-items-center'> 
                             <p class='card-text'>
-                            Compartilhe agora essa caça com seus amigos: <br>                         
-                            <a href='whatsapp://send?text=Olha esse *PROMOÇÃO*! $produto[nome_produto], no Supermercado - $produto[mercado_produto],  $produto[bairro_produto] - $produto[cidade_produto] - $produto[estado_produto] - Valor *(R$ $produto[preco_produto])* -  Confira mais detalhes no site *Caçador de Preco*: https://www.cacadordepreco.com.br/telaProduto.php?id=$produto[id]'> <i class='fa-brands fa-whatsapp fa-xl text-muted'></i></a> 
+                            <i class='fa-solid fa-share-from-square'></i><strong>Compartilhe agora essa caça com seus amigos: </strong><br><br>                            
+                            <a href='whatsapp://send?text=Olha essa *PROMOÇÃO*! $produto[nome_produto], no Supermercado - $produto[mercado_produto],  $produto[bairro_produto] - $produto[cidade_produto] - $produto[estado_produto] - Valor *(R$ $produto[preco_produto])* -  Confira mais detalhes no site *Caçador de Preco*: https://www.cacadordepreco.com.br/telaProduto.php?id=$produto[id]'> <i class='fa-brands fa-whatsapp fa-xl text-muted'></i></a> 
                             <a href='https://www.facebook.com/sharer/sharer.php?u=https://www.cacadordepreco.com.br/telaProduto.php?id=$produto[id]'><i class='fa-brands fa-facebook fa-xl text-muted'></i></a> </div>
                             </p>
                         </div>

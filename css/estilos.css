@@ -50,3 +50,11 @@ label.radio input:checked+span{border-color: #ff0000;background-color: #ff0000;c
 .align-items-center{text-decoration: none; color: #2b2b2b;}
 #voltar{padding-left: 5px !important;}
 .fa-xl{font-size: 30px !important}
+#sobrenos{
+    width: 600px;
+    text-align: center;
+}
+.sobrenosfont{
+    text-decoration: nome;
+    text-align: justify;
+}

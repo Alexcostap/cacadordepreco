@@ -36,3 +36,7 @@
 #btnCadastrar:active{
     transform: scale(0,65);
 }
+
+.nav-link:hover{
+    color: #ff7312 !important;
+}

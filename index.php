@@ -28,6 +28,10 @@ session_start()
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="css/paginaInicial.css">
   <link rel="stylesheet" href="css/footer.css">
+  <!-- SEO -->
+  <meta name="descriptionSom" content="O caçador de preço , fundado em 23 de janeiro de 2023, o site foi criado no curso de programador web na instituição Senac. Tem com o objetivo de ser um site moderno e ágil, voltado para encontrar produtos com descontos para os nossos clientes. Mantém uma margem competitiva por meio da entrega de informações imediata dos produtos. Refere-se a praticidade como fatores de excelência, para manter um site competitivo, eficaz e produtivo.
+  Temos como alvo alcançar clientes para cadastrar produtos , pequenos e grandes comercios  para parcerias. Aqui você vai encontrar os melhores preços e produtos da sua região.">
+  <meta name="author" content="Caçador de Preço">
   <!-- Fav Icon -->
   <link rel="shortcut icon" href="imagens/icon-logo.png" type="image/x-icon">
   <link rel="icon" href="imagens/icon-logo.png" type="image/x-icon">
@@ -47,13 +51,6 @@ session_start()
       </div>
     </div>
   </div>
-  <!--
-  <div class="container">
-    <div class="lista-patrocinador">
-      <div class="produto-patrocinador">1</div>
-      <div class="produto-patrocinador">2</div>      
-    </div>
-  </div>-->
   <br>
   <div class="container">
     <input type="text" class="form-control" id="filtroCards" onkeyup="aplicaFiltroCards()" placeholder="Clique e faça sua Pesquisa (Nome do Produto, Bairro ou Supermercado)" aria-label="Text input with dropdown button">
@@ -62,7 +59,6 @@ session_start()
   <div class="container" id="containerCards">
     <div class="row row-cols-1 row-cols-md-4 g-4">
   <?php
-
     
     $consulta = $conexao->query("select * from produtos"); 
       
