@@ -18,7 +18,8 @@
           <a href='telaLogin.php'><button type='button'  class='btn btn-primary' id='btnCadastrar'>Cadastrar Produto</button></a>";
         }else{
           echo"<a href='telaUsuario.php'><button type='button'  class='btn btn-outline-primary me-2' id='btnEntrar'>" . "<i class='fa-sharp fa-regular fa-user'> </i> " ."Área do Caçador(a):<strong> " .  $_SESSION['login'] . "</strong> </button></a>";
-          echo"<a href='cadastroProduto.php'><button type='button'  class='btn btn-primary' id='btnCadastrar'>" . "<i class='fa-solid fa-cookie-bite'></i>" . " Cadastre sua caça agora!</button></a>";          
+          echo"<a href='cadastroProduto.php'><button type='button'  class='btn btn-primary' id='btnCadastrar'>" . "<i class='fa-solid fa-cookie-bite'></i>" . " Cadastre sua caça agora! </button></a> ";          
+          echo"<a href='telaLogout.php'><button type='button'  class='btn btn-primary' id='btnCadastrar'> " . " Sair</button></a>";
         }
        ?>
       </div>
