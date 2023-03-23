@@ -60,7 +60,7 @@ session_start()
     <div class="row row-cols-1 row-cols-md-4 g-4">
   <?php
     
-    $consulta = $conexao->query("select * from produtos"); 
+    $consulta = $conexao->query("select * from produtos order by id desc"); 
       
     while ($produto = $consulta->fetch(PDO::FETCH_ASSOC)){
     echo "
