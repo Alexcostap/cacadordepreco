@@ -71,7 +71,7 @@ include_once "includes/menu.php"
               <i class='fa-regular fa-money-bill-1'></i> <strong> Valor:</strong> R$ $produto[preco_produto]<br>            
             </p>
             <a href='telaProduto.php?id=$produto[id]'><button type='button'  class='btn btn-primary' id='btnCadastrar'><i></i>Editar</button></a>
-            <a href='telaProduto.php?id=$produto[id]'><button type='button'  class='btn btn-primary' id='btnCadastrar'><i></i>Excluir</button></a>         
+            <a href='php/excluirProduto.php?id=$produto[id]'><button type='button'  class='btn btn-primary' id='btnCadastrar'><i></i>Excluir</button></a>         
             </div>
         </div>
       </div>";
