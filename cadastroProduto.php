@@ -71,6 +71,7 @@
                 <option value="Recife">Recife</option>
                 <option value="Jabotão">Jaboatão dos Guararapes</option>
                 <option value="Olinda">Olinda</option>
+                <option value="Paulista">Paulista</option>
               </select>
             </div>
             <div class="mb-3">
@@ -189,6 +190,8 @@
                 <option data-cidade="Olinda"value="Vila Popular">Vila Pupular</option>
                 <option data-cidade="Jaboatao"value="Vila Tamandaré">Vila Tamandaré</option>
                 <option data-cidade="Recife"value="Zumbi">Zumbi</option>
+                <option data-cidade="Paulista" value="Janga">Janga</option>
+                <option data-cidade="Paulista" value="Pau Amarelo">Pau Amarelo</option>
                 <option value=""></option>
               </select>
   <!-- <script>
