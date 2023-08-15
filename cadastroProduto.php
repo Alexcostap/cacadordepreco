@@ -65,18 +65,89 @@
               </select>
             </div>
             <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Selecione a cidade</label>
+            <label for="exampleFormControlInput1" class="form-label">Cidade:</label>
+            <select class="form-select" name="cidadePdt" id="cidadePdt" aria-label="Default select example" onchange="updateBairros()">
+              <option value="recife">Recife</option>
+              <option value="olinda">Olinda</option>
+              <option value="jaboatao">Jaboatão dos Guararapes</option>
+              <option value="paulista">Paulista</option>
+            </select>
+            <!-- <label for="exampleFormControlInput1" class="form-label">Selecione a cidade</label>
               <select class="form-select" name="cidadePdt" aria-label="Default select example">
                 <option selected>Cidade</option>
                 <option value="Recife">Recife</option>
                 <option value="Jabotão">Jaboatão dos Guararapes</option>
                 <option value="Olinda">Olinda</option>
                 <option value="Paulista">Paulista</option>
-              </select>
+              </select> -->
             </div>
             <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Selecione o Bairro</label>
-              <select class="form-select" name="bairroPdt" aria-label="Default select example">
+              <label for="exampleFormControlInput1" class="form-label">Selecione o bairro:</label>
+              <select  class="form-select" name="bairroPdt" id="bairroPdt" aria-label="Default select example"></select>
+            <script>
+                function updateBairros() {
+                  var cidadeSelect = document.getElementById("cidadePdt");
+                  var bairroSelect = document.getElementById("bairroPdt");
+                  var bairros = [];
+                  
+                  if (cidadeSelect.value === "recife") {
+                    bairros = ["Aflitos", "Afogados", "Água Fria", "Alto José Bonifácio", 
+                                "Apipucos","Areias","Arruda","Barro","Beberibe",
+                                "Boa Viagem","Boa Vista","Bomba do Hemetério",
+                                "Bongi","Brasilia Teimosa","Brejo da Guabiraba",
+                                "Brejo de Beberibe","Cabanga","Caçote","Cajueiro",
+                                "Campina do Barreto","Campo Grande","Casa Amarela",
+                                "Casa Forte","Caxangá","CDU","Cohab","Cordeiro",
+                                "Curado","Derby","Dois Irmãos","Dois unidos", "Encruzilhada",
+                                "Engenho do Meio", "Espinheiro", "Estância", "Graças",
+                                "Guabiraba", "Ibura", "Imbiribeira", "Ipsep", "Iputinga",
+                                "Jaqueira","Jardim São Paulo", "Jiquiá", "Jordão",
+                                "Linha do Tiro","Macaxeira", "Madalena", "Mangabeira",
+                                "Mangueira","Monteiro","Morro da Conceição", "Mustardinha",
+                                "Nova Descoberta", "Paissandu", "Parnamirim", "Passarinho",
+                                "Pina", "Poço da Panela", "Prado", "Rosarinho", "Roda de Fogo",
+                                "San Martin", "Sancho", "Santana", "Santo Amaro", "Santo Antônio",
+                                "São José", "Sapucaia", "Setúbal", "Tamarineira", "Tejipió", "Torre",
+                                "Torreão", "Torrões", "Totó", "Varzea", "Vasco da Gama", "Zumbi"];
+                  } else if (cidadeSelect.value === "olinda") {
+                    bairros = ["7RO", "Águas Compridas", "Aguazinha","Alto da Bondade","Alto da Conquista", "Alto da Nação", "Alto do Sol Nascente",
+                              "Amaro Branco", "Amparo", "Bairro Novo", "Bonsucesso",
+                              "Bultrins", "Caixa D'água", "Carmo", "Casa Caiada", "Fragoso",
+                              "Guadalupe", "Jardim Atlântico", "Jardim Brasil", "Monte",
+                              "Ouro Preto", "Passarinho", "Peixinhos", "Rio Doce", "Salgadinho",
+                              "Santa Tereza", "São Benedito", "Sapucaia", "Sítio Novo",
+                              "Tabajara", "Umuarama", "Varadouro", "Vila Popular"];
+                  } else if (cidadeSelect.value === "jaboatao") {
+                    bairros = ["Barra de Jangada", "Cajueiro Seco", "Candeias","Cavaleiro",
+                              "Centro", "Curado", "Dois Carneiros", "Engenho Velho",
+                              "Floriano", "Jardim Jordão", "Manssu", "Marcos Freire",
+                              "Muribeca", "Piedade", "Santana", "Santo Aleixo", "Socorro",
+                              "Sucupira", "Vargem Fria", "Vila Rica", "Vista Alegre",
+                              "Zumbi do Pacheco"];
+                  }else if (cidadeSelect.value === "paulista"){
+                    bairros = ["Artur Lundgren", "Centro", "Engenho Maranguape",
+                              "Fragoso", "Jaguarana", "Jaguaribe", "Janga",
+                              "Jardim Maranguape", "Jardim Paulista",
+                              "Maranguape I", "Maranguape II", "Maria Farinha",
+                              "Mirueira", "Nobre", "Nsra da Conceição",
+                              "Nsra do Ó", "Paratibe", "Pau Amarelo", "Tabajara",
+                              "Vila Torres Galvão"]
+                  }
+                  
+                  // Remove todas as opções do segundo select
+                  bairroSelect.innerHTML = "";
+                  
+                  // Adiciona as novas opções ao segundo select
+                  for (var i = 0; i < bairros.length; i++) {
+                    var option = document.createElement("option");
+                    option.value = bairros[i];
+                    option.text = bairros[i];
+                    bairroSelect.appendChild(option);
+                  }
+                }
+</script>
+<!-- <label for="exampleFormControlInput1" class="form-label">Selecione o Bairro</label>
+     <select class="form-select" name="bairroPdt" aria-label="Default select example">
                 <option selected><strong>Bairro</strong></option>
                 <option data-cidade="Olinda" value="7RO">7ºRO</option>
                 <option data-cidade="Recife" value="Aflitos">Aflitos</option>
@@ -193,18 +264,7 @@
                 <option data-cidade="Paulista" value="Janga">Janga</option>
                 <option data-cidade="Paulista" value="Pau Amarelo">Pau Amarelo</option>
                 <option value=""></option>
-              </select>
-  <!-- <script>
-               var bairros = $('select[name="bairroPdt"] option');
-              $('select[name="cidadePdt"]').on('change', function () {
-                  var Cidade = this.value;
-                  var novoSelect = bairros.filter(function () {
-                      return $(this).data('cidade') == Cidade;
-                  });
-                  $('select[name="bairroPdt"]').html(novoSelect);
-              });
-</script> -->
-
+              </select> -->  
               <div class="mb-3">    
                 <label for="exampleFormControlInput1" class="form-label">Local</label>
                 <input type="text" class="form-control" id="localPdt" name="mercadoPdt" id="exampleFormControlInput1" placeholder="Extra Bom...">
